@@ -1,0 +1,129 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 800px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.cart-item-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.cart-item-price {
+  font-size: 1.5em;
+  color: #333;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-quantity label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.cart-item-quantity input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  font-size: 1em;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.cart-coupon {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cart-coupon input {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+.cart-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.total {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.coupon-input {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1em;
+}

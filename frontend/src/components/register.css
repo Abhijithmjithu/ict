@@ -1,0 +1,85 @@
+.register-container {
+  width: 80%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(90deg, #ffb3c1 0%, #ffe5e8 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 7px;
+  margin: 50px auto;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.register-heading {
+  margin: 0 0 20px 0;
+  color: navy;
+  text-decoration: underline;
+}
+
+.register-input {
+  width: 100%; 
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+}
+
+.register-button {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0 0 0;
+  width: 100%;
+  padding: 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: darkblue;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-buttons button {
+  border: none;
+  background: none; 
+}
+
+.social-buttons img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .register-container {
+      width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+      width: 90%;
+      margin: 20px auto;
+  }
+
+  .register-button {
+      width: 100%;
+  }
+}

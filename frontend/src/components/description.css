@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.image-and-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-section {
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    margin: auto 100px auto auto;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail.selected {
+    border-color: #aaa;
+    transform: scale(1.1);
+}
+
+.product-image {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.size-selection, .quantity-selection {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.size-selection select, .quantity-selection input {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    border: 1.5px solid;
+    height: 30px;
+    margin-top: 7px;
+    width: 9rem;
+    padding: 0 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.size-selection select:focus, .quantity-selection input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    outline: none;
+    transform: scale(1.05);
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+button {
+    color: white;
+    height: 30px;
+    width: auto;
+    gap: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 128, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 128, 0.8);
+    transform: scale(1.05);
+}
+
+button.teal {
+    size:200px;
+    margin-right: 7px;
+    background-color: teal;
+}
+
+button.teal:hover {
+    background-color: #004d4d;
+}
+
+.iconStyle {
+    width: 30px;
+    height: 30px;
+}
